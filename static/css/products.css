@@ -1,0 +1,13 @@
+.products-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.product {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}

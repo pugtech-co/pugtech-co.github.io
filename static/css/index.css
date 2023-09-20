@@ -1,0 +1,14 @@
+.homepage-content {
+    text-align: center;  /* Center content horizontally */
+    margin-top: 100px;   /* Adjust this value for vertical positioning */
+}
+
+.company-logo {
+    max-width: 200px;    /* Adjust this value as per your logo's size */
+    margin: 0 auto;     /* Center the logo in the block */
+}
+
+.company-name {
+    margin-top: 20px;   /* Space between logo and company name */
+    font-size: 36px;    /* Adjust font size as needed */
+}
