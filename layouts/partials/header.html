@@ -3,26 +3,35 @@
 {{- /* theme is light */}}
 {{- if (eq site.Params.defaultTheme "light") }}
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
+    const prefTheme = localStorage.getItem("pref-theme");
+    if (prefTheme === "dark") {
         document.body.classList.add('dark');
+    } else if (prefTheme === "pug") {
+        document.body.classList.add('pug-mode');
     }
 
 </script>
 {{- /* theme is dark */}}
 {{- else if (eq site.Params.defaultTheme "dark") }}
 <script>
-    if (localStorage.getItem("pref-theme") === "light") {
+    const prefTheme = localStorage.getItem("pref-theme");
+    if (prefTheme === "light") {
         document.body.classList.remove('dark')
+    } else if (prefTheme === "pug") {
+        document.body.classList.add('pug-mode');
     }
 
 </script>
 {{- else }}
 {{- /* theme is auto */}}
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
+    const prefTheme = localStorage.getItem("pref-theme");
+    if (prefTheme === "dark") {
         document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
+    } else if (prefTheme === "light") {
         document.body.classList.remove('dark')
+    } else if (prefTheme === "pug") {
+        document.body.classList.add('pug-mode');
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
@@ -32,7 +41,10 @@
 {{- /* theme-toggle is disabled and theme is auto */}}
 {{- else if (and (ne site.Params.defaultTheme "light") (ne site.Params.defaultTheme "dark"))}}
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    const prefTheme = localStorage.getItem("pref-theme");
+    if (prefTheme === "pug") {
+        document.body.classList.add('pug-mode');
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -41,6 +53,8 @@
 
 <header class="header">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/toggle.js"></script>
+    <link rel="stylesheet" href="/css/toggle.css">
 
     <nav class="nav">
         <div class="logo">
@@ -76,7 +90,7 @@
             {{- end }}
             <div class="logo-switches">
                 {{- if (not site.Params.disableThemeToggle) }}
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                <button id="theme-toggl" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -95,6 +109,7 @@
                         <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
+                    <span id="pug"><img width="24" height="18" src="/images/svg-logo.svg"></span>
                 </button>
                 {{- end }}
 

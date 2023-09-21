@@ -23,7 +23,7 @@ PugTech is a product studio and consultancy based in San Francisco, California. 
         <img src="/images/peter.jpeg" alt="Peter's Headshot">
     </div>
     <div class="founder active" data-founder="bryson">
-        <img src="/images/bryson.jpeg" alt="Bryson's Headshot">
+        <img src="/images/bryson.JPG" alt="Bryson's Headshot">
     </div>
 </div>
 

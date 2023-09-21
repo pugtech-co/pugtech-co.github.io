@@ -1,0 +1,17 @@
+body.pug-mode {
+    filter: sepia(1) brightness(.8);
+    background-color: antiquewhite;
+    --theme: gray;
+    --primary: gray;
+    --content: gray;
+}
+
+#moon, #sun, #pug {
+    display: none;
+}
+
+body:not(.dark):not(.pug-mode) #sun,
+body.dark #moon,
+body.pug-mode #pug {
+    display: block;
+}
