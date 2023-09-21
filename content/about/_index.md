@@ -37,5 +37,5 @@ PugTech is a product studio and consultancy based in San Francisco, California. 
     <strong>Peter Forsee</strong> is a software engineer and engineering manager with over a decade of experience. He has no degrees but he does have 5 kids, 2 dogs, 7 turkeys, and 20-50 chickens depending on how hungry his household has been recently. He uses the income generated from PugTech to fund his bubble bath addiction.
 </div>
 <div class="founder-bio" id="bryson-bio">
-    <strong>Bryson Lockett</strong> is a product manager and engineer who specializes in data science and AI. He has bachelor's degrees in Computer Science and Systems Engineering from the University of Virginia. He spends much of his time trying to convince the other Pugs to move to Palo Alto and the rest of it sous vide-ing whatever he can find around the house.
+    <strong>Bryson Lockett</strong> is a product manager and engineer who specializes in data science. He has bachelor's degrees in Computer Science and Systems Engineering from the University of Virginia. He spends much of his time trying to convince the other Pugs to move to Palo Alto and the rest of it sous vide-ing whatever he can find around the house.
 </div>
