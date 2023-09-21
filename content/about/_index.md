@@ -28,7 +28,7 @@ PugTech is a product studio and consultancy based in San Francisco, California. 
 </div>
 
 <div class="founder-bio" id="ben-bio">
-    <strong>Ben Thomas</strong> is a former McKinsey consultant and an experienced operator. He has bachelor's degrees in Economics and Math from the University of Virginia. In his free time, he enjoys running faster, farther, and more frequently than you.
+    <strong>Ben Thomas</strong> is a former management consultant and an experienced operator. He has bachelor's degrees in Economics and Math from the University of Virginia. In his free time, he enjoys running faster, farther, and more frequently than you.
 </div>
 <div class="founder-bio" id="tindell-bio">
     <strong>Tindell Lockett</strong> is either a Civil War General or the best damn programmer you will ever meet. He has bachelor's degrees in Math and Computer Science from the College of William and Mary and a Q-level security clearance. 
