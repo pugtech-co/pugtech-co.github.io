@@ -1,0 +1,25 @@
+.founders-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.founder {
+    cursor: pointer;
+    transition: opacity 0.3s;
+    width: 25%;
+    padding: 0 5px;
+}
+
+.founder.active {
+    opacity: 1;
+}
+
+.founder:not(.active) {
+    opacity: 0.5;
+}
+
+.founder-bio {
+    display: none;
+    text-align: left;
+}
