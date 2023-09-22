@@ -4,6 +4,7 @@ body.pug-mode {
     --theme: gray;
     --primary: gray;
     --content: gray;
+    --entry: antiquewhite;
     scrollbar-width: thin;
     scrollbar-color: gray #faead7;
 }
